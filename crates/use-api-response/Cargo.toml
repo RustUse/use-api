@@ -1,0 +1,18 @@
+[package]
+name = "use-api-response"
+description = "Models response envelopes, status categories, metadata labels, timing labels, page info, and response links without protocol-specific transport behavior."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-response"
+keywords = ["api", "response"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

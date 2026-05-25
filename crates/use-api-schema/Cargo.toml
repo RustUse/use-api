@@ -1,0 +1,18 @@
+[package]
+name = "use-api-schema"
+description = "Models schema names, schema fields, field kinds, required or optional markers, nullable markers, and broad schema shape labels without becoming a full schema system."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-schema"
+keywords = ["api", "schema"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

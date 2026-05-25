@@ -1,0 +1,18 @@
+[package]
+name = "use-api-header"
+description = "Models common API header names, custom header names, correlation headers, auth headers, idempotency headers, and rate-limit headers without duplicating all HTTP behavior."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-header"
+keywords = ["api", "header"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "use-api-media-type"
+description = "Models media types, subtypes, suffixes, charsets, structured syntax suffixes, and common API media type labels with conservative parsing."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-media-type"
+keywords = ["api", "media", "type"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

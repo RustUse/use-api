@@ -1,0 +1,18 @@
+[package]
+name = "use-api-auth"
+description = "Models auth scheme names, bearer token metadata labels, basic auth markers, API key locations, OAuth scope labels, and permission scopes without authenticating anything."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-auth"
+keywords = ["api", "auth"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

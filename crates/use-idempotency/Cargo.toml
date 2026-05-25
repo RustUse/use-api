@@ -1,0 +1,18 @@
+[package]
+name = "use-idempotency"
+description = "Models idempotency keys, scopes, replay status, request fingerprint labels, and conflict status metadata."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-idempotency"
+keywords = ["idempotencyapi"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

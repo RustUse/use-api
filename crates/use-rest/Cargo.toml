@@ -1,0 +1,18 @@
+[package]
+name = "use-rest"
+description = "Models resource names, collection labels, representation metadata, and REST-style constraint vocabulary without claiming full REST compliance."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-rest"
+keywords = ["restapi"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

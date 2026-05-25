@@ -1,0 +1,116 @@
+[package]
+name = "use-api"
+description = "Feature-gated facade crate for RustUse API primitives"
+publish = true
+autoexamples = false
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api"
+keywords = ["api", "facade", "metadata", "primitive", "rustuse"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+default = ["full"]
+rest = ["dep:use-rest"]
+openapi = ["dep:use-openapi"]
+graphql = ["dep:use-graphql"]
+grpc = ["dep:use-grpc"]
+rpc = ["dep:use-rpc"]
+endpoint = ["dep:use-endpoint"]
+route = ["dep:use-api-route"]
+version = ["dep:use-api-version"]
+pagination = ["dep:use-pagination"]
+cursor = ["dep:use-cursor"]
+rate-limit = ["dep:use-rate-limit"]
+error = ["dep:use-api-error"]
+key = ["dep:use-api-key"]
+webhook = ["dep:use-webhook"]
+idempotency = ["dep:use-idempotency"]
+content-negotiation = ["dep:use-content-negotiation"]
+auth = ["dep:use-api-auth"]
+request = ["dep:use-api-request"]
+response = ["dep:use-api-response"]
+schema = ["dep:use-api-schema"]
+param = ["dep:use-api-param"]
+header = ["dep:use-api-header"]
+media-type = ["dep:use-api-media-type"]
+deprecation = ["dep:use-api-deprecation"]
+resource = ["dep:use-api-resource"]
+operation = ["dep:use-api-operation"]
+full = [
+    "rest",
+    "openapi",
+    "graphql",
+    "grpc",
+    "rpc",
+    "endpoint",
+    "route",
+    "version",
+    "pagination",
+    "cursor",
+    "rate-limit",
+    "error",
+    "key",
+    "webhook",
+    "idempotency",
+    "content-negotiation",
+    "auth",
+    "request",
+    "response",
+    "schema",
+    "param",
+    "header",
+    "media-type",
+    "deprecation",
+    "resource",
+    "operation",
+]
+
+[dependencies]
+use-rest = { workspace = true, optional = true }
+use-openapi = { workspace = true, optional = true }
+use-graphql = { workspace = true, optional = true }
+use-grpc = { workspace = true, optional = true }
+use-rpc = { workspace = true, optional = true }
+use-endpoint = { workspace = true, optional = true }
+use-api-route = { workspace = true, optional = true }
+use-api-version = { workspace = true, optional = true }
+use-pagination = { workspace = true, optional = true }
+use-cursor = { workspace = true, optional = true }
+use-rate-limit = { workspace = true, optional = true }
+use-api-error = { workspace = true, optional = true }
+use-api-key = { workspace = true, optional = true }
+use-webhook = { workspace = true, optional = true }
+use-idempotency = { workspace = true, optional = true }
+use-content-negotiation = { workspace = true, optional = true }
+use-api-auth = { workspace = true, optional = true }
+use-api-request = { workspace = true, optional = true }
+use-api-response = { workspace = true, optional = true }
+use-api-schema = { workspace = true, optional = true }
+use-api-param = { workspace = true, optional = true }
+use-api-header = { workspace = true, optional = true }
+use-api-media-type = { workspace = true, optional = true }
+use-api-deprecation = { workspace = true, optional = true }
+use-api-resource = { workspace = true, optional = true }
+use-api-operation = { workspace = true, optional = true }
+
+[[test]]
+name = "facade"
+required-features = ["full"]
+
+[[example]]
+name = "api_basic_usage"
+path = "examples/basic_usage.rs"
+required-features = ["full"]
+
+[lints]
+workspace = true

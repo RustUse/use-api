@@ -1,0 +1,18 @@
+[package]
+name = "use-api-route"
+description = "Models route templates and route segment metadata for static, dynamic, wildcard, and optional segments without implementing a full router."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-api-route"
+keywords = ["api", "route"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

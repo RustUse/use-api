@@ -1,0 +1,18 @@
+[package]
+name = "use-pagination"
+description = "Provides page number, page size, limit, offset, total count, marker, and page metadata helpers."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-pagination"
+keywords = ["paginationapi"]
+categories = ["data-structures", "development-tools", "web-programming"]
+
+[lints]
+workspace = true

@@ -1,0 +1,189 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-rest"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-openapi"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-graphql"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-grpc"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-rpc"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-endpoint"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-route"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-version"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-pagination"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-cursor"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-rate-limit"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-error"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-key"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-webhook"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-idempotency"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-content-negotiation"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-auth"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-request"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-response"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-schema"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-param"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-header"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-media-type"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-deprecation"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-resource"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api-operation"
+release = true
+version_group = "rustuse-api"
+
+[[package]]
+name = "use-api"
+release = true
+version_group = "rustuse-api"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+    "use-rest",
+    "use-openapi",
+    "use-graphql",
+    "use-grpc",
+    "use-rpc",
+    "use-endpoint",
+    "use-api-route",
+    "use-api-version",
+    "use-pagination",
+    "use-cursor",
+    "use-rate-limit",
+    "use-api-error",
+    "use-api-key",
+    "use-webhook",
+    "use-idempotency",
+    "use-content-negotiation",
+    "use-api-auth",
+    "use-api-request",
+    "use-api-response",
+    "use-api-schema",
+    "use-api-param",
+    "use-api-header",
+    "use-api-media-type",
+    "use-api-deprecation",
+    "use-api-resource",
+    "use-api-operation",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+    { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+    { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+    { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+    { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+    { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+    { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+    { footer = "^changelog: ?ignore$", skip = true },
+    { message = "^.*", group = "Changed" },
+]

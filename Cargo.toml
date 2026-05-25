@@ -1,0 +1,125 @@
+[workspace]
+members = [
+    "crates/use-api",
+    "crates/use-rest",
+    "crates/use-openapi",
+    "crates/use-graphql",
+    "crates/use-grpc",
+    "crates/use-rpc",
+    "crates/use-endpoint",
+    "crates/use-api-route",
+    "crates/use-api-version",
+    "crates/use-pagination",
+    "crates/use-cursor",
+    "crates/use-rate-limit",
+    "crates/use-api-error",
+    "crates/use-api-key",
+    "crates/use-webhook",
+    "crates/use-idempotency",
+    "crates/use-content-negotiation",
+    "crates/use-api-auth",
+    "crates/use-api-request",
+    "crates/use-api-response",
+    "crates/use-api-schema",
+    "crates/use-api-param",
+    "crates/use-api-header",
+    "crates/use-api-media-type",
+    "crates/use-api-deprecation",
+    "crates/use-api-resource",
+    "crates/use-api-operation",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+documentation = "https://rustuse.org"
+publish = false
+readme = "README.md"
+repository = "https://github.com/RustUse/use-api"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+use-rest = { version = "0.0.1", path = "crates/use-rest" }
+use-openapi = { version = "0.0.1", path = "crates/use-openapi" }
+use-graphql = { version = "0.0.1", path = "crates/use-graphql" }
+use-grpc = { version = "0.0.1", path = "crates/use-grpc" }
+use-rpc = { version = "0.0.1", path = "crates/use-rpc" }
+use-endpoint = { version = "0.0.1", path = "crates/use-endpoint" }
+use-api-route = { version = "0.0.1", path = "crates/use-api-route" }
+use-api-version = { version = "0.0.1", path = "crates/use-api-version" }
+use-pagination = { version = "0.0.1", path = "crates/use-pagination" }
+use-cursor = { version = "0.0.1", path = "crates/use-cursor" }
+use-rate-limit = { version = "0.0.1", path = "crates/use-rate-limit" }
+use-api-error = { version = "0.0.1", path = "crates/use-api-error" }
+use-api-key = { version = "0.0.1", path = "crates/use-api-key" }
+use-webhook = { version = "0.0.1", path = "crates/use-webhook" }
+use-idempotency = { version = "0.0.1", path = "crates/use-idempotency" }
+use-content-negotiation = { version = "0.0.1", path = "crates/use-content-negotiation" }
+use-api-auth = { version = "0.0.1", path = "crates/use-api-auth" }
+use-api-request = { version = "0.0.1", path = "crates/use-api-request" }
+use-api-response = { version = "0.0.1", path = "crates/use-api-response" }
+use-api-schema = { version = "0.0.1", path = "crates/use-api-schema" }
+use-api-param = { version = "0.0.1", path = "crates/use-api-param" }
+use-api-header = { version = "0.0.1", path = "crates/use-api-header" }
+use-api-media-type = { version = "0.0.1", path = "crates/use-api-media-type" }
+use-api-deprecation = { version = "0.0.1", path = "crates/use-api-deprecation" }
+use-api-resource = { version = "0.0.1", path = "crates/use-api-resource" }
+use-api-operation = { version = "0.0.1", path = "crates/use-api-operation" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+doc_markdown = "allow"
+derivable_impls = "allow"
+expect_used = "allow"
+missing_const_for_fn = "allow"
+missing_errors_doc = "allow"
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+multiple_crate_versions = "allow"
+return_self_not_must_use = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-rest",
+    "use-openapi",
+    "use-graphql",
+    "use-grpc",
+    "use-rpc",
+    "use-endpoint",
+    "use-api-route",
+    "use-api-version",
+    "use-pagination",
+    "use-cursor",
+    "use-rate-limit",
+    "use-api-error",
+    "use-api-key",
+    "use-webhook",
+    "use-idempotency",
+    "use-content-negotiation",
+    "use-api-auth",
+    "use-api-request",
+    "use-api-response",
+    "use-api-schema",
+    "use-api-param",
+    "use-api-header",
+    "use-api-media-type",
+    "use-api-deprecation",
+    "use-api-resource",
+    "use-api-operation",
+    "use-api",
+]
